@@ -13,7 +13,7 @@ class CreateTableStore extends Migration
      */
     public function up()
     {
-        Schema::create('table_store', function (Blueprint $table) {
+        Schema::create('stores', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
 
@@ -36,6 +36,6 @@ class CreateTableStore extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_store');
+        Schema::dropIfExists('stores');
     }
 }
