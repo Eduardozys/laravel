@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5297b02f-b184-4fa6-8b82-17e3afcd13d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2022_10_07_205111_create_table_store.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2022_10_07_205111_create_table_store.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2022_10_10_204215_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2022_10_10_204215_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +147,8 @@
       <workItem from="1665173211431" duration="2812000" />
       <workItem from="1665427393903" duration="7676000" />
       <workItem from="1665435986259" duration="897000" />
-      <workItem from="1665492277060" duration="1608000" />
+      <workItem from="1665492277060" duration="6119000" />
+      <workItem from="1665519816673" duration="1384000" />
     </task>
     <servers />
   </component>
