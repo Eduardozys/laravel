@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5297b02f-b184-4fa6-8b82-17e3afcd13d9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Store.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2022_10_10_204215_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2022_10_10_204215_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +153,8 @@
       <workItem from="1665427393903" duration="7676000" />
       <workItem from="1665435986259" duration="897000" />
       <workItem from="1665492277060" duration="6119000" />
-      <workItem from="1665519816673" duration="1384000" />
+      <workItem from="1665519816673" duration="1980000" />
+      <workItem from="1665682877124" duration="6968000" />
     </task>
     <servers />
   </component>
