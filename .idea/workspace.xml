@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5297b02f-b184-4fa6-8b82-17e3afcd13d9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/marketplace_l6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/marketplace_l6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/stores/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/stores/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/stores/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/stores/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,12 +127,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Laravel/marketplace_l6/resources/views/admin/stores",
+    "last_opened_file_path": "D:/Laravel/marketplace_l6/resources/views/admin",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Laravel\marketplace_l6\resources\views\admin" />
       <recent name="D:\Laravel\marketplace_l6\resources\views\admin\stores" />
     </key>
   </component>
@@ -162,7 +161,8 @@
       <workItem from="1665682877124" duration="7297000" />
       <workItem from="1665764295257" duration="9807000" />
       <workItem from="1666009556327" duration="1407000" />
-      <workItem from="1666011303644" duration="6232000" />
+      <workItem from="1666011303644" duration="11268000" />
+      <workItem from="1666096629996" duration="10294000" />
     </task>
     <servers />
   </component>
