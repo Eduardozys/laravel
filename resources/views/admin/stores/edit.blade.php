@@ -21,7 +21,7 @@
             <input type="text" name="phone" class="form-control" value="{{$store->phone}}">
         </div>
 
-        <divclass="form-group">
+        <div class="form-group">
             <label>Celular/Whatsapp</label>
             <input type="text" name="mobile_phone" class="form-control" value="{{$store->mobile_phone}}">
         </div>
