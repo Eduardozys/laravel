@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Atualizar Produto</h1>
-    <form action="{{route('admin.products.update', ['product' => $product->id])}}" method="post">
+    <form action="{{route('admin.products.update', ['product' => $product->id])}}" method="post" enctype="multipart/form-data">
         @csrf
         @method("PUT")
 
@@ -50,6 +50,26 @@
             @enderror
         </div>
 
+        <div class="form-group">
+            <label>Categorias</label>
+            <select name="categories[]" id="" class="form-control" multiple>
+                @foreach($categories as $category)
+                    <option value="{{$category->id}}"
+                            @if($product->categories->contains($category)) selected @endif
+                    >{{$category->name}}</option>
+                @endforeach
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="">Fotos do Produto</label>
+            <input type="file" name="photos[]" class="form-control @error('photos') is-invalid @enderror" multiple>
+            @error('photos')
+            <div class="invalid-feedback">
+                {{$message}}
+            </div>
+            @enderror
+        </div>
 
         <div class="form-group">
             <label>Slug</label>
@@ -60,6 +80,24 @@
             <button type="submit" class="btn btn-lg btn-success">Atualizar Produto</button>
         </div>
     </form>
+
+    <hr>
+
+    <div class="row">
+        @foreach($product->photos as $photo)
+            <div class="col-4 text-center">
+                <img src="{{asset('storage/' . $photo->image)}}" alt=""  class="img-fluid">
+
+                <form action="{{route('admin.photo.remove')}}" method="post">
+                    @csrf
+                    <input type="hidden" name="photoName" value="{{$photo->image}}">
+
+                    <button type="submit" class="btn btn-lg btn-danger">REMOVER</button>
+                </form>
+
+            </div>
+        @endforeach
+    </div>
 @endsection
 
 
