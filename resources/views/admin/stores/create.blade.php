@@ -51,12 +51,7 @@
             @error('logo')
             <div class="invalid-feedback">
                 {{$message}}
-        </div>
-            @enderror
-
-        <div class="form-group">
-            <label>Slug</label>
-            <input type="text" name="slug" class="form-control">
+                @enderror
         </div>
 
         <div>
