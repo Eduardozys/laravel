@@ -29,22 +29,15 @@
             <li class="nav-item @if(request()->is('/')) active @endif">
                 <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only">(current)</span></a>
             </li>
-        </ul>
 
-        @auth
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item @if(request()->is('admin/stores*')) active @endif">
-                    <a class="nav-link" href="{{route('admin.stores.index')}}">Lojas <span class="sr-only">(current)</span></a>
+            @foreach($categories as $category)
+                <li class="nav-item @if(request()->is('category/'. $category->slug)) active @endif"">
+                    <a class="nav-link" href="{{route('category.single', ['slug' => $category->slug])}}">{{$category->name}}</a>
                 </li>
-                <li class="nav-item @if(request()->is('admin/products*')) active @endif">
-                    <a class="nav-link" href="{{route('admin.products.index')}}">Produtos</a>
-                </li>
-                <li class="nav-item @if(request()->is('admin/categories*')) active @endif">
-                    <a class="nav-link" href="{{route('admin.categories.index')}}">Categorias</a>
-                </li>
-            </ul>
-        @endauth
-            <div class="my-2 my-lg-0">
+            @endforeach
+
+        </ul>
+           <div class="my-2 my-lg-0">
                 <ul class="navbar-nav mr-auto">
 
                     <li class="nav-item">
