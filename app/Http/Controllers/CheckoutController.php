@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Payment\PagSeguro\CreditCard;
+use App\Store;
 use Illuminate\Http\Request;
 
 class CheckoutController extends Controller
@@ -33,10 +34,11 @@ class CheckoutController extends Controller
         try { $dataPost = $request->all();
 
             $user = auth()->user();
-            $cartItens = session()->get('cart');
+            $cartItems = session()->get('cart');
+            $stores = array_unique(array_column($cartItems, 'store_id'));
             $reference ='XPTO';
 
-            $creditCardPayment = new CreditCard($cartItens, $user, $dataPost, $reference);
+            $creditCardPayment = new CreditCard($cartItems, $user, $dataPost, $reference);
             $result = $creditCardPayment->doPayment();
 
 
@@ -44,14 +46,20 @@ class CheckoutController extends Controller
                 'reference' => $reference,
                 'pagseguro_code' => $result->getCode(),
                 'pagseguro_status' => $result->getStatus(),
-                'items' => serialize($cartItens),
-                'store_id' => 42
+                'items' => serialize($cartItems),
+                'store_id' => 48
             ];
 
-            $user->orders()->create($userOrder);
+            $userOrder = $user->orders()->create($userOrder);
 
-            session()->forget('cart');
-            session()->forget('pagseguro_session_code');
+            $userOrder->stores()->sync($stores);
+
+            //Notificar loja de novo pedido
+            $store = (new Store())->notifyStoreOwners($stores);
+
+
+        session()->forget('cart');
+        session()->forget('pagseguro_session_code');
 
 
             return response()->json([

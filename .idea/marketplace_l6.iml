@@ -108,5 +108,6 @@
     <orderEntry type="library" name="pagseguro.directpayment" level="application" />
     <orderEntry type="library" name="toastr" level="application" />
     <orderEntry type="library" name="jquery-2.2.4" level="application" />
+    <orderEntry type="library" name="jquery.maskMoney" level="application" />
   </component>
 </module>
