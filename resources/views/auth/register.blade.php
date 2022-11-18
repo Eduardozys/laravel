@@ -69,6 +69,11 @@
                             </div>
                         </div>
                     </form>
+                    <hr>
+                    <div>
+                        <p class="'text-justify"> PARA CADASTRO DE VENDEDOR:</p>
+                        <p class="'text-justify">Efetuar cadastro normalmente, após entrar em contato com adm para devida atualização</p>
+                    </div>
                 </div>
             </div>
         </div>

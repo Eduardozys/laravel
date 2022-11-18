@@ -18,7 +18,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 40px;">
 
-    <a class="navbar-brand" href="{{route('home')}}">Marketplace L6</a>
+    <a class="navbar-brand" href="{{route('home')}}">TeTrixX</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,6 +30,12 @@
             <li class="nav-item @if(request()->is('/')) active @endif">
                 <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only">(current)</span></a>
             </li>
+
+
+
+
+
+
 
             @foreach($categories as $category)
                 <li class="nav-item @if(request()->is('category/'. $category->slug)) active @endif">
@@ -61,6 +67,14 @@
                                 <i class="fa fa-shopping-cart fa-2x"></i>
                         </a>
                     </li>
+
+                        <li class="nav-item @if(request()->is('admin/stores*')) active @endif">
+                            <a class="nav-link" aria-current="page" href="{{route('admin.stores.index')}}">Admin Lojas <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item @if(request()->is('/register')) active @endif">
+                            <a class="nav-link" href="{{route('register')}}">Register <span class="sr-only">(current)</span></a>
+                        </li>
                 </ul>
             </div>
 
