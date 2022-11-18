@@ -8,3 +8,9 @@ function filterItemsByStoreId(array $items, $storeId)
 
     });
 }
+
+
+function formatPriceToDatabase($price)
+{
+    return str_replace(['R$','.',','], ['','','.'], $price);
+}
