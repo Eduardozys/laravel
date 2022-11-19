@@ -6,6 +6,7 @@ use App\Payment\PagSeguro\CreditCard;
 use App\Store;
 use Illuminate\Http\Request;
 use Ramsey\Uuid\Uuid;
+use App\UserOrder;
 
 class CheckoutController extends Controller
 {

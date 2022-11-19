@@ -17,8 +17,8 @@ class CreateOrderStoreTable extends Migration
            $table->unsignedBigInteger('store_id');
            $table->unsignedBigInteger('order_id');
 
-           $table->foreign('store_id')->references('id')->on('stores');
-           $table->foreign('order_id')->references('id')->on('user_orders');
+           $table->foreign('store_id')->references('id')->on('stores')->onDelete('cascade');
+           $table->foreign('order_id')->references('id')->on('user_orders')->onDelete('cascade');
         });
     }
 
